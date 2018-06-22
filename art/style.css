@@ -1,0 +1,597 @@
+*{  
+  padding:0; 
+  margin:0;
+  font-family: Helvetica, Sans-Serif;
+  font-size: 34px;
+}
+
+
+a {
+
+    text-decoration: none;
+	color:black;
+		
+}
+
+body {
+  
+  /* background:grey; */
+  
+  
+}
+
+#wrapper {
+	
+	/* background:white; */
+	
+	
+}
+
+header {
+	
+	/* background:maroon; */
+	
+}
+
+iframe {
+
+	width: 854px;
+	height: 480px;
+	
+}
+
+#navigation {
+	
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap:1em;
+	
+}
+
+#navigation div { 
+
+	/* background:pink; */
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+}
+
+#navigation div p { 
+
+	font-size: 16px;
+	
+}
+
+#mainheader {
+
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap:1em;
+		padding:1em;
+	
+}
+
+#socialmedia {
+
+	display:flex;
+	justify-content:flex-end;
+	
+}
+
+#socialmedia img {
+	
+	height:42px;
+	width:42px;
+	
+}
+
+#stuff {
+	
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 200px;
+	grid-gap:1em;
+	padding:1em;
+	
+}
+
+
+.actionbox {
+	
+	/* background:purple; */
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-style: solid;
+	
+	
+}
+
+.actionbox:hover {
+	
+    /* background-color: #F5F5F5; */
+}
+	
+}
+
+
+.actionbox p {
+	
+	
+}
+
+#theme {
+	
+	/* background:yellow; */
+	
+	padding:1em;
+	
+}
+
+#theme div {
+	
+	background-image:url(pics/news.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+
+#theme div p {
+	
+	color:white;
+	font-size: 36px;
+	font-weight: bold;
+	-webkit-text-stroke: 2px black;
+	
+	
+}
+
+footer, footer p {
+	
+	/* background:brown; */
+	padding: 1em;
+	font-size: 14px;
+	
+}
+
+
+
+@media (max-width: 600px) {
+	
+	.actionbox {
+	
+	/* background:pink; */
+	
+	}
+	
+	#stuff {
+	
+	grid-template-columns: repeat(1, 1fr);
+	
+	
+	}	
+	
+	#navigation {
+	
+		/*
+		
+				Столбиком
+		
+		display: grid;
+		grid-template-columns: repeat(1, auto);
+		grid-gap:1px;
+		
+		*/
+		
+		display:none;
+	
+	
+	}
+	
+	#navigation div p {
+		
+		font-size: 14px;
+		
+	}
+	
+	iframe {
+
+		width: auto;
+		height: auto;
+	
+	}	
+	
+	
+}
+
+
+/* movies */
+
+#moviebox {
+	
+	
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap:1em;
+	padding:1em;
+	
+}
+
+.movie {
+	
+	/* background: blue; */
+	
+}
+
+.movie p {
+	
+	font-size:24px;
+	
+}
+
+#moviebox iframe {
+
+	width: 854px;
+	height: 480px;
+	
+}
+
+@media (max-width: 900px) {
+	
+	
+	
+	#moviebox iframe {
+
+		width: auto;
+		height: auto;
+	
+	}
+	
+	
+}
+
+/* /movies */
+
+
+/* ---------- */
+
+
+/* poetry */
+
+#poetrywrap {
+	
+	display: grid;
+	grid-template-columns: 250px 1fr;
+	grid-gap:1em;
+	padding:1em;
+	
+}
+
+#poemlist {
+	
+	list-style-type: none;
+	
+}
+
+#poemlist li {
+	
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	
+	
+}
+
+#poemlist li a {
+	
+	list-style-type: none;
+	font-size: 24px;
+	
+}
+
+#poetryboxbottom1, #poetryboxbottom2 {
+	
+	display: none;
+	
+}
+
+#poetrycontent {
+	
+	display:grid;
+	
+	grid-template-rows: 2em auto auto;
+
+	padding: 10px;
+	
+}
+
+#poetrycontentheader {
+	
+	
+	
+}
+
+.poetrytogglebutton {
+	
+	background-color: white;
+    border: solid;
+    color: black;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	
+}
+
+#thispoembox {
+	
+	/*Страница стиха*/
+	
+	padding: 1em;
+	
+}
+
+.poem {
+	
+	text-align:center;
+	
+}
+
+@media (max-width: 600px) {
+	
+	
+	#poetrywrap {
+	
+
+	grid-template-columns: 100px 1fr;
+	padding: 10px;
+
+	
+	}
+	
+	#poemlist li a {
+	
+	font-size: 16px;
+	
+	}
+	
+	
+}
+
+
+/* /poetry */
+
+
+/* ---------- */
+
+/* photo */
+
+#photowrap {
+	
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap:1em;
+	padding:1em;
+	
+	
+}
+
+.album {
+	
+	/*border: 1px solid grey;*/
+	
+}
+
+.cover {
+	
+	width: 100%;
+    height: auto;
+	
+}
+
+@media (max-width: 600px) {
+	
+	
+	.album p {
+		
+		font-size: 24px;
+		
+	}
+	
+	.photo {
+	
+	width: 70%;
+    height: auto;
+	
+	}
+	
+	
+	
+	
+}
+
+#openalbum {
+	
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-gap:1em;
+	padding:1em;
+	
+}
+
+.photo {
+	
+	width: 100%;
+    height: auto;
+	
+}
+
+
+
+
+/* /photo */
+
+/* ---------- */
+
+/* event */
+
+#eventcontent {
+	
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap:1em;
+	padding:1em;
+	
+}
+
+.ebox {
+	
+	/*text-align:center;*/
+	
+}
+
+
+.eboxbottom {
+	
+	display: none;
+	
+}
+
+
+.etogglebutton {
+	
+	background-color: white;
+    border: solid;
+    color: black;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	
+}
+
+
+/* /event */
+
+/* ---------- */
+
+/* news */
+
+#newscontent {
+	
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap:1em;
+	padding:1em;
+	
+}
+
+.nbox {
+	
+	/*text-align:center;*/
+	
+}
+
+
+.nboxbottom {
+	
+	display: none;
+	
+}
+
+
+.ntogglebutton {
+	
+	background-color: white;
+    border: solid;
+    color: black;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	
+}
+
+/* /news */
+
+
+/* ---------- */
+
+/* style*/
+
+
+			
+.showcase {
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap:1em;
+	padding:1em;
+	
+	
+}		
+
+.justpics {
+	
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap:1em;
+	padding:1em;
+	
+	
+}	
+	
+.smalls {
+	
+	display:flex;
+	
+}
+
+
+.big{
+	
+	height: auto; 
+	width: auto; 
+	max-width: 400px; 
+	max-height: 400px; 
+	
+}
+.small {
+	
+	height: auto; 
+	width: auto; 
+	max-width: 100px; 
+	max-height: 100px;
+	padding: 1px;
+	
+	
+}
+
+.desc {
+	
+	padding:10px;
+	
+}
+
+@media (max-width: 600px) {
+	
+	
+	.showcase {
+	
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap:1em;
+	padding:1px;
+	
+	
+}
+	
+	
+}
+			
+
+/* /style*/
