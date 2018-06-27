@@ -25,3 +25,7 @@ function makeBig() {
 function makeItBig(a) {
     $("#bigpic").attr("src","style/item1/"+a+".jpg");
 }
+
+function makeItBig2(a) {
+    $("#bigpic2").attr("src","style/item2/"+a+".jpg");
+}

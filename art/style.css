@@ -15,28 +15,20 @@ a {
 
 body {
   
-  /* background:grey; */
-  
-  
 }
 
 #wrapper {
 	
-	/* background:white; */
-	
-	
 }
 
 header {
-	
-	/* background:maroon; */
-	
+		
 }
 
 iframe {
 
-	width: 854px;
-	height: 480px;
+	width: 856px;
+	height: 481px;
 	
 }
 
@@ -50,7 +42,6 @@ iframe {
 
 #navigation div { 
 
-	/* background:pink; */
 	display:flex;
 	justify-content:center;
 	align-items:center;
@@ -59,7 +50,7 @@ iframe {
 
 #navigation div p { 
 
-	font-size: 16px;
+	font-size: 17px;
 	
 }
 
@@ -90,7 +81,7 @@ iframe {
 	
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-auto-rows: 200px;
+	grid-auto-rows: 201px;
 	grid-gap:1em;
 	padding:1em;
 	
@@ -99,7 +90,6 @@ iframe {
 
 .actionbox {
 	
-	/* background:purple; */
 	display:flex;
 	justify-content:center;
 	align-items:center;
@@ -110,9 +100,6 @@ iframe {
 
 .actionbox:hover {
 	
-    /* background-color: #F5F5F5; */
-}
-	
 }
 
 
@@ -122,8 +109,6 @@ iframe {
 }
 
 #theme {
-	
-	/* background:yellow; */
 	
 	padding:1em;
 	
@@ -150,19 +135,22 @@ iframe {
 
 footer, footer p {
 	
-	/* background:brown; */
 	padding: 1em;
 	font-size: 14px;
 	
 }
 
-
+#aboutlink {
+	
+	font-size: 22px;
+	padding: 1em;
+	float:right;
+	
+}
 
 @media (max-width: 600px) {
 	
 	.actionbox {
-	
-	/* background:pink; */
 	
 	}
 	
@@ -174,19 +162,8 @@ footer, footer p {
 	}	
 	
 	#navigation {
-	
-		/*
-		
-				Столбиком
-		
-		display: grid;
-		grid-template-columns: repeat(1, auto);
-		grid-gap:1px;
-		
-		*/
 		
 		display:none;
-	
 	
 	}
 	
@@ -211,7 +188,6 @@ footer, footer p {
 
 #moviebox {
 	
-	
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-gap:1em;
@@ -221,7 +197,6 @@ footer, footer p {
 
 .movie {
 	
-	/* background: blue; */
 	
 }
 
@@ -280,7 +255,6 @@ footer, footer p {
 	border-bottom: 1px solid black;
 	border-right: 1px solid black;
 	
-	
 }
 
 #poemlist li a {
@@ -290,7 +264,13 @@ footer, footer p {
 	
 }
 
-#poetryboxbottom1, #poetryboxbottom2 {
+.poetrybox {
+	
+	margin-bottom: 1em;
+	
+}
+
+.poetryboxbottom {
 	
 	display: none;
 	
@@ -307,8 +287,19 @@ footer, footer p {
 }
 
 #poetrycontentheader {
+	padding: 5px;
+}
+
+
+.pbheader {
 	
+	margin-bottom: 10px;
+
+}
+
+.pbtext {
 	
+	font-size: 22px;
 	
 }
 
@@ -339,16 +330,19 @@ footer, footer p {
 	
 }
 
-@media (max-width: 600px) {
+.poemtext {
 	
+	font-size:22px;	
+	
+}
+
+@media (max-width: 600px) {	
 	
 	#poetrywrap {
 	
-
 	grid-template-columns: 100px 1fr;
 	padding: 10px;
 
-	
 	}
 	
 	#poemlist li a {
@@ -356,6 +350,8 @@ footer, footer p {
 	font-size: 16px;
 	
 	}
+	
+	
 	
 	
 }
@@ -374,7 +370,6 @@ footer, footer p {
 	grid-template-columns: auto auto;
 	grid-gap:1em;
 	padding:1em;
-	
 	
 }
 
@@ -407,9 +402,6 @@ footer, footer p {
 	
 	}
 	
-	
-	
-	
 }
 
 #openalbum {
@@ -428,9 +420,6 @@ footer, footer p {
 	
 }
 
-
-
-
 /* /photo */
 
 /* ---------- */
@@ -448,7 +437,6 @@ footer, footer p {
 
 .ebox {
 	
-	/*text-align:center;*/
 	
 }
 
@@ -459,6 +447,17 @@ footer, footer p {
 	
 }
 
+.eboxheader {
+	
+	margin-bottom: 10px;
+
+}
+
+.eboxtext {
+	
+	font-size: 22px;
+	
+}
 
 .etogglebutton {
 	
@@ -490,8 +489,6 @@ footer, footer p {
 }
 
 .nbox {
-	
-	/*text-align:center;*/
 	
 }
 
@@ -532,6 +529,8 @@ footer, footer p {
 	grid-gap:1em;
 	padding:1em;
 	
+	border: 1px solid black;
+	
 	
 }		
 
@@ -567,13 +566,24 @@ footer, footer p {
 	max-width: 100px; 
 	max-height: 100px;
 	padding: 1px;
-	
-	
+		
 }
 
 .desc {
 	
 	padding:10px;
+	
+}
+
+.desclist {
+	
+	padding: 1em;
+	
+}
+
+.desclist li {
+	
+	font-size: 22px;
 	
 }
 
@@ -592,6 +602,50 @@ footer, footer p {
 	
 	
 }
+
+/* /style */
+
+/* ----------- */
+
+/* music */
+
+#musicwrapper {
+	
+	padding: 1em;
+	
+}
+
+.track {
+	
+	padding: 1em;
+	
+}
+
+/* /music */
+			
+/* ---------- */
+
+/* about */
+
+#aboutwrapper {
+	
+	padding: 1em;
+	
+}
+
+#aboutpic {
+	
+	float:left;
+	
+}
+
+.abouttext {
+	
+	font-size: 22px;
+	
+}
+/* /about */
+
 			
 
 /* /style*/
